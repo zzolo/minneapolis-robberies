@@ -15,3 +15,7 @@ Experimentation with [Heatmap.js](http://www.patrick-wied.at/static/heatmapjs/in
 ### CartoDB
 
 Experimentation with CartoDB (needs link).
+
+### Github
+
+Since github shows maps for GeoJSON we have a free, usable map [here](https://github.com/zzolo/minneapolis-robberies/blob/master/leaflet-heatmap/robberies-2013-ytd.geojson).
