@@ -1,0 +1,14 @@
+
+.body-container {
+  padding: 1em;
+}
+
+#heatmap-map {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 1em;
+}
+
+.options-group {
+  margin-bottom: 1em;
+}

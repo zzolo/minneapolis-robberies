@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="bower_components/purecss/build/pure-min.css" />
+  <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
+  <!--[if lte IE 8]>
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.ie.css" />
+  <![endif]-->
+
+  <link rel="stylesheet" href="app.css" />
+  <body>
+    <div class="body-container">
+      <h1>Robberies in Minneapolis</h1>
+      <p>A experimental look at robberies in Minneapolis in 2013.  The heatmap is showing relative amounts of robbery incidents and does not indicate absolute magnitude.  Use the buttons below to filter.  This may not work in certain browsers, try updating to a modern browser like Chrome or Firefox.</p>
+      <div id="heatmap-map"></div>
+
+      <div class="options">
+        <div class="options-group">
+          <a href="#" class="option-all pure-button pure-button-secondary">All of 2013</a>
+        </div>
+
+        <div class="options-group">
+          <a href="#" class="option-october pure-button pure-button-secondary">October</a>
+          <a href="#" class="option-september pure-button pure-button-secondary">September</a>
+          <a href="#" class="option-august pure-button pure-button-secondary">August</a>
+          <a href="#" class="option-july pure-button pure-button-secondary">July</a>
+          <a href="#" class="option-june pure-button pure-button-secondary">June</a>
+          <a href="#" class="option-may pure-button pure-button-secondary">May</a>
+        </div>
+
+        <div class="options-group">
+          <a href="#" class="option-mondays pure-button pure-button-secondary">Mondays</a>
+          <a href="#" class="option-tuesdays pure-button pure-button-secondary">Tuesdays</a>
+          <a href="#" class="option-wednesdays pure-button pure-button-secondary">Wednesdays</a>
+          <a href="#" class="option-thursdays pure-button pure-button-secondary">Thursdays</a>
+          <a href="#" class="option-fridays pure-button pure-button-secondary">Fridays</a>
+        </div>
+
+        <div class="options-group">
+          <a href="#" class="option-hour-1 pure-button pure-button-secondary">5AM - 10AM</a>
+          <a href="#" class="option-hour-2 pure-button pure-button-secondary">10AM - 5PM</a>
+          <a href="#" class="option-hour-3 pure-button pure-button-secondary">5PM - 10PM</a>
+          <a href="#" class="option-hour-4 pure-button pure-button-secondary">10PM - 5AM</a>
+        </div>
+
+        <div class="options-group">
+          <a href="#" class="option-cat-biz pure-button pure-button-secondary">ROBBIZ Category</a>
+          <a href="#" class="option-cat-per pure-button pure-button-secondary">ROBPER Category</a>
+          <a href="#" class="option-cat-pag pure-button pure-button-secondary">ROBPAG Category</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/momentjs/moment.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script src="bower_components/heatmap.js/src/QuadTree.js"></script>
+    <script src="vendor/heatmap.js"></script>
+    <script src="vendor/heatmap-leaflet.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
