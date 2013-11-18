@@ -220,7 +220,7 @@ $(function() {
   $.getJSON('robberies-2013-ytd.geojson', function(data) {
     var parsed = [];
     var i;
-    console.log(data);
+
     data.features.forEach(function(f) {
       parsed.push({ lat: f.geometry.coordinates[1], lon: f.geometry.coordinates[0], value: 1});
     });
