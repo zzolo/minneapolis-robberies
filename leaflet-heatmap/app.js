@@ -95,6 +95,22 @@ $(function() {
         return { lat: f.geometry.coordinates[1], lon: f.geometry.coordinates[0], value: 1};
       });
     },
+    'saturdays': function(features) {
+      features = _.filter(features, function(f) {
+        return (f.properties.Day == 'Sat');
+      });
+      return _.map(features, function(f) {
+        return { lat: f.geometry.coordinates[1], lon: f.geometry.coordinates[0], value: 1};
+      });
+    },
+    'sundays': function(features) {
+      features = _.filter(features, function(f) {
+        return (f.properties.Day == 'Sun');
+      });
+      return _.map(features, function(f) {
+        return { lat: f.geometry.coordinates[1], lon: f.geometry.coordinates[0], value: 1};
+      });
+    },
     'hour-1': function(features) {
       features = _.filter(features, function(f) {
         return (parseInt(f.properties.Hour) >= 5 && parseInt(f.properties.Hour) < 10);
